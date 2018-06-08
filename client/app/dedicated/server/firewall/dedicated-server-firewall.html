@@ -55,7 +55,10 @@
                     data-ng-if="!$ctrl.informations.firewall"
                     data-ng-click="setAction('firewall/order/dedicated-server-firewall-order')"
                     data-ng-disabled="!$ctrl.server.canOrder || !$ctrl.canOrderAsaOption"
-                    data-translate="server_configuration_firewall_asa_order_title_button">
+                    data-ng-bind="::'server_configuration_firewall_asa_order_title_button' | translate"
+                    data-track-on="click"
+                    data-track-name="dedicated-server-firewall-order"
+                    data-track-click="action">
             </button>
             <button type="button"
                     class="btn btn-default btn-block"

@@ -74,7 +74,10 @@
                                             data-ng-if="server.os && !server.isExpired && server.commercialRange !== 'housing' && !disable.installationInProgress"
                                             data-ng-click="setAction('installation/choice/dedicated-server-installation-choice', server)"
                                             data-ng-disabled="disable.reboot || disable.byOtherTask"
-                                            data-translate="server_configuration_reinstallation_button">
+                                            data-ng-bind="::'server_configuration_reinstallation_button '| translate"
+                                            data-track-on="click"
+                                            data-track-name="dedicated-server-reinstall"
+                                            data-track-click="action">
                                     </button>
                                     <button type="button"
                                             class="btn btn-default ml-auto my-auto text-wrap"
@@ -82,7 +85,10 @@
                                             data-ng-if="!server.os && !server.isExpired && server.commercialRange !== 'housing' && !disable.installationInProgress"
                                             data-ng-click="setAction('installation/choice/dedicated-server-installation-choice', server)"
                                             data-ng-disabled="disable.reboot || disable.byOtherTask"
-                                            data-translate="server_configuration_installation_button">
+                                            data-ng-bind="::'server_configuration_installation_button' | translate"
+                                            data-track-on="click"
+                                            data-track-name="dedicated-server-install"
+                                            data-track-click="action">
                                     </button>
                                 </div>
                             </div>
@@ -111,7 +117,10 @@
                                                 data-ng-if="!server.isExpired"
                                                 data-ng-click="setAction('netboot/dedicated-server-netboot')"
                                                 data-ng-disabled="disable.reboot || disable.byOtherTask || server.state == 'HACKED' || server.state == 'HACKED_BLOCKED' || (disable.installationInProgress && !disable.installationInProgressError)"
-                                                data-translate="server_configuration_netboot_title_button">
+                                                data-ng-bind="::'server_configuration_netboot_title_button' | translate"
+                                                data-track-on="click"
+                                                data-track-name="dedicated-server-netboot"
+                                                data-track-click="action">
                                         </button>
                                     </div>
                                 </div>
@@ -236,7 +245,10 @@
                                                 data-ng-switch-when="notSubscribed"
                                                 data-ng-click="setAction('bandwidth/order/dedicated-server-bandwidth-order', server.name)"
                                                 data-ng-disabled="server.state === 'HACKED' || server.state === 'HACKED_BLOCKED'"
-                                                data-translate="server_bandwidth_order_button">
+                                                data-ng-bind="::'server_bandwidth_order_button' | translate"
+                                                data-track-on="click"
+                                                data-track-name="dedicated-server-bandwidth-order"
+                                                data-track-click="action">
                                         </button>
                                     </div>
                                 </div>

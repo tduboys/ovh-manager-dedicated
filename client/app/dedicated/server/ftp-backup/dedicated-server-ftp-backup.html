@@ -190,7 +190,10 @@
                     data-ng-if="ftpBackup.model && ftpBackup.model.canOrder"
                     data-ng-click="!disable.deleteFtp && ftpBackup.model.canOrder && setAction('ftp-backup/order/dedicated-server-ftp-backup-order')"
                     data-ng-disabled="disable.deleteFtp"
-                    data-translate="server_configuration_ftpbackup_access_order">
+                    data-ng-bind="::'server_configuration_ftpbackup_access_order' | translate"
+                    data-track-on="click"
+                    data-track-name="dedicated-server-ftp-backup-order"
+                    data-track-click="action">
             </button>
             <button type="button"
                     class="btn btn-default btn-block disabled"

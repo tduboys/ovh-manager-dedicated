@@ -100,7 +100,10 @@
                                 <a target="_blank"
                                    title="{{ 'core_change_owner' | translate }} ({{ 'core_new_window' | translate }})"
                                    data-ng-href="{{:: changeOwnerUrl }}"
-                                   data-translate="core_change_owner">
+                                   data-ng-bind="::'core_change_owner' | translate"
+                                   data-track-on="click"
+                                   data-track-name="dedicated-server-change-owner"
+                                   data-track-click="action">
                                 </a>
                             </li>
                             <li data-ng-if="featureAvailability.hasContactChangement() && !server.isExpired">
@@ -114,7 +117,9 @@
                                         data-ng-click="setAction('terminate/dedicated-server-terminate', {
                                             serviceInfos: serviceInfos
                                         })"
-                                        data-translate="server_close_service">
+                                        data-ng-bind="::'server_close_service' | translate"
+                                        data-track-on="dedicated-server-terminate"
+                                        data-track-click="action">
                                 </button>
                             </li>
                         </ul>

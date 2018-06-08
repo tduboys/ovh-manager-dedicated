@@ -3,7 +3,10 @@
         <a class="mr-2"
             data-ng-href="{{:: $ctrl.getRenewUrl() }}"
             data-ng-bind=":: $ctrl.serviceInfos.expiration | date:'mediumDate'"
-            data-ng-if="!$ctrl.hideRenewDate">
+            data-ng-if="!$ctrl.hideRenewDate"
+            data-track-on="click"
+            data-track-name="renew-{{::$ctrl.serviceType.toLowerCase()}}"
+            data-track-click="action">
         </a>
 
         <a target="_blank"
@@ -11,7 +14,10 @@
            title="{{ :: 'core_service_renew_button' | translate }}"
            data-ng-if="!$ctrl.forceHideRenewAction && ((!$ctrl.isAutoRenew() && $ctrl.getRenewUrl() && !$ctrl.hideRenewAction) || ($ctrl.serviceInfos.status === 'expired'))"
            data-ng-href="{{:: $ctrl.getRenewUrl() }}"
-           data-translate="core_service_renew_button">
+           data-ng-bind="::'core_service_renew_button' | translate"
+           data-track-on="click"
+           data-track-name="renew-{{::$ctrl.serviceType.toLowerCase()}}"
+           data-track-click="action">
         </a>
     </span>
 </span>
