@@ -16,5 +16,5 @@ angular.module("Billing.directives").component("billingRenewDate", {
             this.$onChanges = () => this.init();
         }
     ],
-    template: '<span data-ng-bind="$ctrl.content"></span>'
+    template: '<span data-ng-bind-html="$ctrl.content"></span>'
 });

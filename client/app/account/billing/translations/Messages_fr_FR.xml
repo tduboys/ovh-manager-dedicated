@@ -23,19 +23,19 @@
    <translation id="autorenew_service_renew_manuel" qtlid="219797">Manuel</translation>
    <translation id="autorenew_service_renew_delete_at_expiration" qtlid="399736">Résiliation à l'expiration</translation>
    <translation id="autorenew_service_renew_manual_payment" qtlid="416059">Auto : Désactivé</translation>
-   <translation id="autorenew_service_renew_year" qtlid="402880">Auto : Tous les ans</translation>
-   <translation id="autorenew_service_renew_month" qtlid="402893">Auto : Tous les mois</translation>
+   <translation id="autorenew_service_renew_year" qtlid="402880">Automatique : Tous les ans</translation>
+   <translation id="autorenew_service_renew_month" qtlid="402893">Automatique : Tous les mois</translation>
    <translation id="autorenew_service_renew_3months" qtlid="402906">Trimestriel</translation>
    <translation id="autorenew_service_renew_6months" qtlid="402919">Semestriel</translation>
    <translation id="autorenew_service_renew_frequency_value" qtlid="402932">Tous les {0} mois</translation>
-   <translation id="autorenew_service_renew_years_frequency_value" qtlid="402945">Auto : Tous les {0} ans</translation>
+   <translation id="autorenew_service_renew_years_frequency_value">Automatique : Tous les {0} ans</translation>
    <translation id="manualrenew_service_update_button_caption" qtlid="416111">Payer le service</translation>
    <translation id="manualrenew_onlyauto_alert" qtlid="264166">Vous n'avez séléctionné que des renouvellements automatiques.</translation>
    <translation id="autorenew_empty" qtlid="219810">Vous n'avez aucun service</translation>
    <translation id="autorenew_service_mass_actions_caption" qtlid="300227">Actions sur les éléments sélectionnés :</translation>
    <translation id="autorenew_service_update_button_caption" qtlid="416072">Modifier la fréquence de paiement</translation>
    <translation id="autorenew_service_update_date_button_caption" qtlid="300253">Aligner les dates de renouvellement.</translation>
-   <translation id="autorenew_service_resiliate_button" qtlid="56337">Résilier le service</translation>
+   <translation id="autorenew_service_resiliate_button">Résilier à date d'échéance</translation>
    <translation id="autorenew_service_resiliate_button_title" qtlid="243604">Résilier le service : {0}</translation>
    <translation id="autorenew_service_disable_button" qtlid="416085">Désactiver le paiement automatique</translation>
    <translation id="autorenew_service_enable_button" qtlid="416098">Activer le paiement automatique</translation>
