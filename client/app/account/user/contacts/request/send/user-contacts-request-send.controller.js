@@ -1,7 +1,7 @@
 angular.module('UserAccount').controller('UserAccount.controllers.contacts.requestsSend', [
   '$scope',
   '$translate',
-  'UserAccount.services.Contacts',
+  'accountUserContacts',
   'Alerter',
   'User',
 

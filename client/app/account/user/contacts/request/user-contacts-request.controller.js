@@ -1,6 +1,6 @@
 angular.module('UserAccount').controller('UserAccount.controllers.contacts.requests', [
   '$scope',
-  'UserAccount.services.Contacts',
+  'accountUserContacts',
   'Alerter',
   'User',
   '$q',

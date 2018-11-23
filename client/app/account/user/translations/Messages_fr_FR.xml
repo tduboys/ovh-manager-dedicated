@@ -406,6 +406,10 @@
    <translation id="useraccount_contacts_task_waiting_for_other" qtlid="287879">En attente de la réponse du contact <strong>{0}</strong></translation>
    <translation id="useraccount_contacts_task_info_security" qtlid="287892"><p>Pour des raisons de sécurité, vous devez confirmer votre demande.</p><p><strong>Comment faire ?</strong></p><p>Cliquez sur le lien contenu dans l'e-mail envoyé sur <strong>{0}</strong>.</p><p>Vous serez ensuite redirigé sur votre espace client où vous pourrez confirmer ou annuler votre demande.</p><strong class="text-warning">Attention : L'envoi de l'email peut prendre quelques minutes</strong></translation>
 
+   <!-- Contacts > Service -->
+   <translation id="account_user_contacts_services_fetchingUser_error">Une erreur est survenue au moment de la récupération des informations sur l'utilisateur.</translation>
+   <translation id="account_user_contacts_services_fetchingServices_error">Une erreur est survenue au moment de la récupération des informations sur les services.</translation>
+
    <translation id="useraccount_contacts_service_all_categories" qtlid="259315">Toutes les categories</translation>
    <translation id="useraccount_contacts_service_category_CLOUD" qtlid="251655">Public Cloud</translation>
    <translation id="useraccount_contacts_service_category_DEDICATED" qtlid="66032">Serveur Dédié</translation>

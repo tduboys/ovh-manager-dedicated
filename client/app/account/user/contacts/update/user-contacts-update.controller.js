@@ -1,5 +1,5 @@
 angular.module('UserAccount').controller('UserAccount.controllers.update', [
-  'UserAccount.services.Contacts',
+  'accountUserContacts',
   '$scope',
   '$stateParams',
   '$q',

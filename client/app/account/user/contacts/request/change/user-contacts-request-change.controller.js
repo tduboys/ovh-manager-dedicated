@@ -2,7 +2,7 @@ angular.module('UserAccount').controller('UserAccount.controllers.contacts.reque
   '$scope',
   '$stateParams',
   '$translate',
-  'UserAccount.services.Contacts',
+  'accountUserContacts',
   'Alerter',
   'User',
   function ($scope, $stateParams, $translate, Contacts, Alerter, User) {
